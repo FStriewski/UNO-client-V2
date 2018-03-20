@@ -33,7 +33,7 @@ function ButtonAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="title" color="inherit" className={classes.flex}>
-            Multiplayer Tic Tac Toe
+            This is UNOOO
           </Typography>
           {
             location.pathname.indexOf('signup') > 0 &&
