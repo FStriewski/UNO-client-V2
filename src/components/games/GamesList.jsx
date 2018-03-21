@@ -18,6 +18,7 @@ class GamesList extends PureComponent {
     }
   }
 
+  // FS Set .map(player....) to.email instead of firstName because of error
   renderGame = (game) => {
     const {users, history} = this.props
 
@@ -27,7 +28,7 @@ class GamesList extends PureComponent {
           This game is played by&nbsp;
           {
             game.players
-              .map(player => users[player.userId].firstName)
+              .map(player => users[player.userId].email)
               .join(' and ')
           }
         </Typography>
